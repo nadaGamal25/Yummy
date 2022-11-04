@@ -1,0 +1,127 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* loading */
+body{
+    overflow: hidden;
+}
+#loading{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 99999;
+}
+
+/* navbar */
+.nav-container{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    transition: all 0.5s;
+    z-index: 99;
+}
+.active{
+    left: 0;
+}
+
+.logo{
+    width: 40px;
+}
+.nav-logo-box{
+    background-color: #f8f6f6;
+    width: 60px;
+}
+.nav-icons{
+    font-size: 25px;
+    color: #000;
+    cursor: pointer;
+}
+.navlinks-box{
+    background-color: #000;
+    width: 250px;
+}
+.navlinks-box .p-copyright{
+    color: #999;
+}
+.sochial-icons{
+    cursor: pointer;
+}
+.nav-links ul li{
+    list-style: none;
+}
+.navLink{
+    color: #fff;
+    cursor: pointer;
+}
+.nav-links li{
+    opacity: 0;
+    padding-top: 60px;    
+}
+/* home */
+body{
+    background-color: #000000f2;
+}
+
+/* search section */
+.search-row{
+    position: fixed;
+    top: 0;
+    right: 12.5%;
+    left: 12.5%;
+    z-index: 9;
+    padding-top: 30px;
+    background-color:rgb(13,13,13);
+}
+.displaynone{
+    display: none;
+}
+.search-input{
+    background-color:rgb(13,13,13);
+    border: none;
+    border-bottom: 1px solid rgba(255,255,255,.7);
+    border-radius: 0;
+    color: #fff;
+}
+.search-input:focus{
+    background-color: rgb(13,13,13);
+}
+.search-input::placeholder{
+    text-align: center;
+}
+/* img */
+.overlay-meal{
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0%;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    overflow: hidden;
+}
+.img-box:hover .overlay-meal{
+    opacity: 1;
+    height: 100%;
+}
+.overlay-meal h2{
+    color: #000;
+}
+/* //area */
+.fa-city{
+    color: #e65a50ab !important;
+}
+.shadow{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+}
+/*  */
+.fa-bowl-food {
+    color: #9ee650ab;
+}
+
+.contactinput{
+    box-shadow: 0 .5rem 1rem rgba(255,255,255,.1)!important;
+    margin: 15px 0;
+}
